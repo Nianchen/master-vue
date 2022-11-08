@@ -1,5 +1,7 @@
 ﻿* {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 html {
     height: 100%;
@@ -70,7 +72,7 @@ strong{
 }
 #nav {
     position: relative;
-    margin-top: -2rem;
+    margin-top: -3rem;
     width: 100%;
     background-color: #49b1f5;
     background-attachment: local;
@@ -223,13 +225,22 @@ h1 {
 .is-center {
     text-align: center;
 }
+.timer {
+    font-size: 180%;
+    line-height: 1.5;
+    margin: 1em 0;
+}
 
+.timer b {
+    color: rgb(253, 99, 125);
+}
 .Shou {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 80vh;
     background-color: rgb(243, 230, 241);
+    border-radius: 20px;
 }
 .shell{
     width: 90%;
@@ -237,15 +248,22 @@ h1 {
     display: flex;
 }
 .box{
+    position: relative;
     flex: 1;
     overflow: hidden;
     transition: .5s;
     margin-top: 20px;
-    margin: 0 20px;
+    margin: 0 10px;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, .5);
     border-radius: 20px;
     border: 10px solid #fff;
     background-color: #fff;
+}
+.lifedetial{
+    position: absolute;
+    top: 10%;
+    right: 0;
+    text-align: center;
 }
 .box>img{
     width: 200%;
@@ -254,7 +272,7 @@ h1 {
     transition: .5s;
 }
 .box>span{
-    font: 200 45px '优设标题黑';
+    font: 300 30px '楷体';
     text-align: center;
     height: 15%;
     display: flex;
@@ -262,7 +280,7 @@ h1 {
     align-items: center;
 }
 .box:hover{
-    flex-basis: 40%;
+    flex-basis: 50%;
 }
 .box:hover>img{
     width: 100%;
@@ -356,6 +374,40 @@ aside_content .card-info .author-info__description {
     animation: main 1s;
 }
 
+.Aside{
+    z-index: 2;
+    width: 180px;
+    position: fixed;
+    text-align: center;
+    font-size: 22px;
+    right: -145px;
+    background-color: white;
+    box-shadow: 8px 8px 8px 6px rgba(7, 17, 27, .06);
+    transition: 0.5s;
+}
+.Aside:hover{
+    right: 1px;
+}
+.Asideitem{
+    position: relative;
+    width: 80%;
+    left: 20%;
+    border-left: 1px solid #49b1f5;
+}
+.CrlAside{
+    position: absolute;
+    left: 0;
+    width: 20%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.Aside ul li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #49b1f5;
+}
 @media screen and (min-width: 768px){
     #site-title {
         font-size: 2rem;

@@ -1,4 +1,4 @@
-﻿﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="zh">
 
 <head>
@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=5">
     <title>念宸 NianChen</title>
-    <meta name="description" content="95后青年，后端开发者，略懂前端, 学生，实习，缺乏社会的毒打">
-    <meta name="keywords" content="Java,Spring,个人博客，微信小程序，博客">
+    <meta name="description" content="00后，24届一个正在寻找实习的小前端，">
+    <meta name="keywords" content="JavaScript,个人博客">
     <meta name="format-detection" content="telephone=no">
     <link rel="shortcut icon" href="./static/images/favicon.ico">
     <link rel="stylesheet" href="static/css/index.css">
@@ -29,7 +29,7 @@
                     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
                     <script>
                         var typed = new Typed(".blogtitle", {
-                            strings: ['心之所念,宸之居所', '保持热爱,奔赴山海'],
+                            strings: ['理想可抵岁月漫长', '保持热爱,奔赴山海'],
                             startDelay: 300,
                             typeSpeed: 100,
                             loop: true,
@@ -96,40 +96,82 @@
                             </div>
                         </div>
                     </div>
-                    <div class="backTop">↑</div>
+                </div>
+                <div class="Aside">
+                    <div class="CrlAside">
+                      <span><</span>   
+                    </div>
+                   <div class="Asideitem">
+                     <ul>
+                        <li>
+                            <a href="#Life"> 1.日常经历</a>
+                        </li>
+                        <li> <a href="#Music"> 2.音乐插件 </a>
+                        </li>
+                        <li> <a href="#Skill"> 3.项目经历</a>
+                        </li>
+                    </ul>
+                   </div>
+                   
                 </div>
                 <article id="page">
                     <div class="article-container">
-                        <h2>音乐</h2>
-                        <meting-js auto="https://y.qq.com/n/yqq/playlist/7713574197.html">
-                        </meting-js>
-                        <hr>
-                        <div class="Shou">
+                        <h2 id="Life">日常</h2>
+                        <div class="Text ">
+                            <div>
+                                <p style="font-size: 18px">
+                                <h4>学业未完</h4>
+                                <span>
+                                    念辰，生于河南，虽不说苦读数年，但也尽力而为，后求学于南阳~
+                                    <br />
+                                    要『<strong>独立，自信</strong>』这是在这两年本科生涯最大的感触。
+                                </span>
+                                <br />
+                                <h4>良辰美景</h4>
+                                求学之际偶遇佳人，虽不曾朝朝暮暮，但依稀能看到未来的路。<br />
+                                <h3>这是我对象！</h3>
+                                <img src="./Wan.jpg" style="height: 120px;border-radius: 40%;">
+                                <h3>我们已经在一起了:</h3>
+                                <div class="timer">
+                                    <b id="d"></b> Days <b id="h"></b> Hours <b id="m"></b> Minutes <b id="s"></b>
+                                    Seconds
+                                </div>
+                                <h5>前路漫漫</h5>
+                                因兴趣所致，热情投身前端技术，有幸得遇良友，带我接触多方技术。<br />
+                                虽还未能站立于一方天地，每日寻寻问道，自知其中快乐~
+                                </p>
+                            </div>
+                        </div>
+                        <!-- <div class="Shou">
                             <div class="shell">
                                 <div class="box">
                                     <img src="./img (1).jpg">
-                                    
                                 </div>
                                 <div class="box">
                                     <img src="./img (2).jpg">
-                                   
+
                                 </div>
                                 <div class="box">
                                     <img src="./img (3).jpg">
-                                    
+
                                 </div>
                                 <div class="box">
                                     <img src="./img (4).jpg">
-                                    
+
                                 </div>
                                 <div class="box">
                                     <img src="./img (5).jpg">
-                                    
+
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                         <hr>
-                        <h2>技能</h2>
+                        <h2 id="Music">音乐</h2>
+                        <meting-js auto="https://y.qq.com/n/yqq/playlist/7713574197.html">
+                        </meting-js>
+
+                        <hr>
+                        <h2 id="Skill">我都学了什么QAQ~</h2>
                         <div class="skillbox">
                             <div class="skillbar">
                                 <div class="skillbar-title"
@@ -194,18 +236,13 @@
                                     <h3>虽然写的很烂(我太菜了)</h3>
                                     <h4>但是也是可以看一看滴！！！</h4>
                                     <h4>目前已更新</h4>
-                                    <ul>入门系列笔记
-                                        <li>Javascript入门系列</li>
-                                        <li>ES6入门系列</li>
-                                        <li>Vue2入门系列</li>
-                                        <li>Typescript入门</li>
-                                        <li>浏览器工作原理</li>
-                                        <li>HTTP入门</li>
-                                    </ul>
-                                    <ul>工具系列笔记
-                                        <li>如何搭建自己的图床</li>
-                                        <li>如何搭建自己的QQ机器人</li>
-                                    </ul>
+                                    <li>Javascript入门系列</li>
+                                    <li>ES6入门系列</li>
+                                    <li>Vue2入门系列</li>
+                                    <li>Typescript入门</li>
+                                    <li>浏览器工作原理</li>
+                                    <li>HTTP入门</li>
+                                    <li>如何搭建自己的图床</li>
                                 </div>
                             </div>
                             <h2>建议剩下的都去 <a href="https://github.com/Nianchen">Github</a>看顺便给个关注</h2>
@@ -260,30 +297,30 @@
     <script src="https://cdn.jsdelivr.net/gh/TRHX/CDN-for-itrhx.com@3.0.8/js/maodian.js"></script>
 
     <script type="text/javascript">
-    var toTop = document.querySelector('.backTop')
-    toTop.onclick = function(){
-        console.log(123);
-        var dom = document.querySelector('body');
-        var h = dom.scrollTop;
-        var subH = parseInt(h / 50);
-        var timer = setInterval(function(){
-            h -= subH;
-            if(h <= 0){
-                dom.scrollTop = 0;
-                clearInterval(timer);
-            }else{
-                dom.scrollTop = h;
+
+
+        function timer() {
+            window.setTimeout("timer()", 1000);
+            var start = new Date("2021-08-11 00:00:00"); // 2015.7.2
+            var t = new Date().getTime() - start;
+            var h = ~~(t / 1000 / 60 / 60 % 24);
+            if (h < 10) {
+                h = "0" + h;
             }
-        },1)    
-    }
-    window.onscroll = function(){
-        console.log(window.pageYOffset);
-        if(window.pageYOffset>50){
-            toTop.style.display = "block";
-        }else{
-            toTop.style.display = "none";
+            var m = ~~(t / 1000 / 60 % 60);
+            if (m < 10) {
+                m = "0" + m;
+            }
+            var s = ~~(t / 1000 % 60);
+            if (s < 10) {
+                s = "0" + s;
+            }
+            document.getElementById('d').innerHTML = ~~(t / 1000 / 60 / 60 / 24);
+            document.getElementById('h').innerHTML = h;
+            document.getElementById('m').innerHTML = m;
+            document.getElementById('s').innerHTML = s;
         }
-    }
+        timer();
         (function ($) {
             $.fn.snow = function (options) {
                 var $flake = $('<div id="snowbox" />').css({ 'position': 'absolute', 'z-index': '9999', 'top': '-50px' }).html('&#10052;'),
